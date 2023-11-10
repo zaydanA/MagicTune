@@ -1,0 +1,200 @@
+
+
+:root{
+    --blue: #243E73;
+    --blueFont:#1C2540;
+    --gray:#EFEFEF;
+}
+
+.cardCon{
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* overflow-y: scroll; */
+    /* background-color: #243E73; */
+    width: auto;
+    height: 100%;
+}
+
+.albumCon{
+    margin-top: 20px;
+    /* margin-top: 50px; */
+    /* height: 1000px; */
+    max-height: 700px;
+    /* max-height: 1500px; */
+}
+
+.searchText{
+    font-family: 'Courier New',monospace;
+    margin: 5px 10px;
+}
+
+.cardCon2{
+    height: 70%;
+}
+
+.cardCon3{
+    position: relative;
+    border-radius: 20px;
+    position: relative;
+    padding: 0 20px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    background-color: var(--blueFont);
+    opacity: 0.98;
+    box-shadow: 0px 0px 25px 0px #000000;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* column-gap: 10px; */
+    /* column-gap: 10px; */
+    row-gap: 20px;
+    margin-bottom: -15px;
+    /* height: 63vh; */
+    /* margin-bottom: 20px; */
+    height: 60vh;
+    max-height: 700px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.cardCon3::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@media screen and (max-height: 1180px) and (min-height: 900px){
+    .cardCon3{
+        height: 60vh;
+    }
+
+}
+@media screen and (max-height: 900px) and (min-height: 800px){
+    .cardCon3{
+        height: 50vh;
+    }
+}
+@media screen and (max-height: 800px) and (min-height: 400px){
+    .cardCon3{
+        height: 30vh;
+    }
+
+}
+@media screen and (max-height: 400px){
+    .cardCon3{
+        height: 10vh;
+    }
+}
+@media screen and (max-height: 100px){
+    .cardCon3{
+        height: 10px;
+    }
+}@media screen and (min-width: 4000px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(11,1fr);
+        column-gap: 10px;
+        row-gap: 30px;
+    }
+}
+@media screen and (min-width: 3600px) and (max-width: 4000px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+@media screen and (min-width: 3200px) and (max-width: 3600px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+@media screen and (max-width: 3200px) and (min-width: 2700px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+@media screen and (max-width: 2700px) and (min-width: 2300px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+@media screen and (max-width: 2300px) and (min-width: 1880px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+@media screen and (max-width: 1880px) and (min-width: 1600px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1300px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 950px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+}
+@media screen and (max-width: 950px) and (min-width: 650px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* height: 60vh; */
+        max-height: 700px;
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+    .albumCon{
+        /* margin-top: 20px; */
+        margin-top: 50px;
+        max-height: 700px;
+        height: 700px;
+        /* max-height: 1500px; */
+    }
+}
+@media screen and (max-width: 650px){
+    .cardCon3{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* height: 60vh; */
+        max-height: 700px;
+        /* column-gap: 10px; */
+        /* row-gap: 30px; */
+    }
+    .searchText{
+        font-size: 1em;
+    }
+    .albumCon{
+        /* margin-top: 20px; */
+        margin-top: 50px;
+        max-height: 700px;
+        /* height: 700px; */
+        /* max-height: 1500px; */
+    }
+}

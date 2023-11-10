@@ -1,0 +1,25 @@
+
+
+:root{
+    --blue: #243E73;
+    --blueFont:#1C2540;
+    --gray:#EFEFEF;
+}
+
+.mainCon{
+    position: relative;
+    /* background-color: #fefefe; */
+    height: 100%;
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 200px; */
+    /* overflow-y: scroll; */
+    
+}
+
+.searchCon{
+    height: 10%;
+    width: 100%;
+}

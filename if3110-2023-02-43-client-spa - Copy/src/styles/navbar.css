@@ -1,0 +1,98 @@
+
+
+:root{
+    --blue: #243E73;
+    --blueFont:#1C2540;
+    --gray:#EFEFEF;
+    --white:#FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    /* padding: 10px; */
+    /* padding-left: 30px; 
+    padding-right: 30px; */
+    position: relative;
+    /* top: 0;
+    left: 0; */
+    color: var(--blueFont);
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 10px 2px #888888;
+    gap: 10px;
+}
+
+.h1-WBD{
+    position: relative;
+    
+}
+
+.leftCon{
+    /* margin-left: 20px; */
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.logoCon{
+    /* margin-left: 30px; */
+    text-decoration: none;
+    /* height: 100%; */
+    /* width: 100%; */
+    margin-left: 30px;
+}
+.logoimg{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: contain;
+    z-index: 100000;
+}
+.navbarimg{
+    width: 40px;
+    height: 40px;
+    margin: auto 10px;
+    /* padding-right: 30px; */
+    /* margin-bottom: 13px; */
+    /* border-radius: 50%; */
+}
+
+.user-icon{
+    font-size:0.62em;  
+    /* change font size should change size of icon */
+    /* float:left; margin:1em;  remove this line to avoid float/margin */
+}
+
+.zmax{
+    z-index: 9999999;
+}
+
+.avatar{
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1C2540;
+    /* margin-right: 35px; */
+}
+
+.user-icon::before{
+    content:" "; display:block;
+    height:2em; width:2em;
+    background:skyblue;
+    position:relative; left:2em;top:0.8em;
+    border-radius:2em;
+  }
+  .user-icon::after{
+    content:" "; display:block;
+    height:2em;width:4em;
+    background:skyblue;
+    position:relative; left:1em;top:1em;
+    border-radius:2em 2em 0 0;
+  }

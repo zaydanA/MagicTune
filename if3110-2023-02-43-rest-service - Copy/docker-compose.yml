@@ -1,0 +1,43 @@
+version: '3.4'
+services:
+  # magictune-rest-service:
+  #   container_name: magictune-rest-service
+  #   image: magictune-rest-service:latest
+  #   restart: always
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   command: npm start
+  #   ports:
+  #     - "8082:3000"
+  #   volumes:
+  #     - .:/app
+
+  db-rest:
+    container_name: db-rest
+    image: postgres:latest
+    restart: always
+    ports:
+      - "1501:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: rest_database
+    volumes:
+      - rest-data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d
+
+  # db-rest-gui:
+  #   container_name: db-rest-gui
+  #   image: phpmyadmin/phpmyadmin
+  #   restart: always
+  #   ports:
+  #     - '1502:80'
+  #   environment:
+  #     PMA_HOST: db-rest
+  #     UPLOAD_LIMIT: 40M
+  #   depends_on:
+  #     - db-rest
+
+volumes:
+  rest-data:

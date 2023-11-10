@@ -1,0 +1,14 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #b2e0df;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    min-height: 1000px;
+    overflow: hidden;
+}

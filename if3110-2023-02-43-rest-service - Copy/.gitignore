@@ -1,0 +1,7 @@
+# node_modul gak butuh
+node_modules
+
+# .idea dan .vscode
+.idea/
+.vscode/
+.env
